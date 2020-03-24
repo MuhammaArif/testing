@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <form action="backend.php">
+        <!-- action Attribute is used to specify where the formdata is to be sent to the server after submission of the form. It can be used in the <form> element. Syntax: <form action="URL"> Attribute Values: URL: It is used to specify the URL of the document where the data to be sent after the submission of the form -->
+        <label for="name"> </label>
+        <div>
+            <center> <u>
+                    <h1>Query Form</h1>
+            </center></u> <br>
+            <label for="name"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Name:</label>
+            <!-- <label for="name">Name</label> means this lable for name which must be same as in id="name" and Name which show Text in form would be Removed from begining of input rather then before endclose label when cursor come over Name pointer shows and click over name Box would be select after &nbsp; put space and again &nbsp type -->
+
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type="text" name="myName" id="name">
+        </div>
+        <br>
+        <!-- HTML form with three input fields; two text fields and one submit button. <input> elements are used within a <form> element to declare input controls that allow users to input data. An input field can vary in many ways, depending on the type attribute.     -->
+        <div>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Father Name: <input type="text"
+                name="fathername">
+        </div> <br>
+        <div>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Profession:
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="myProfession">
+        </div>
+        <br>
+        <div>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email:
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="email" name="myemail">
+        </div> <br>
+        <!-- type="email" is used for email for example @ sign can use  -->
+        <!-- <div>
+     Password : <input type="password">  can not see what ever you type
+    </div> -->
+        <div>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Age:
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input
+                type="number" name="mynumber">
+        </div>
+        <br>
+        <div>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date of Birth: <input type="date"
+                name="date of birth">
+        </div>
+        <!-- input="date" is used for date from full Kalender to select date month and year -->
+        <br>
+        <div>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; City of Birth &nbsp; <select name="city">
+                <option value="ber"> Berlin</option>
+                <option value="khi" selected> Karachi </option>
+            </select>
+
+        </div> <br>
+        <div>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Elegible:
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="my elegibility">
+        </div> <br>
+        <!-- type="checkbox" is used for check and uncheck the box -->
+        <!-- Elegible <input type="checkbox" name="myelegibility" checked> this means check box will be already check  and name="my elegibilty" means with name would be in backend.php file where this save -->
+        <div>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Gender:
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; male <input type="radio" name="My Gender"> female <input
+                type="radio" name="My Gender">
+        </div> <br>
+        <!-- input="radio" is used for radio button to select one of them when both name same wie here is "My Gender" -->
+        Write extra if you want <br> <textarea name="My text" cols="80" rows="30"></textarea>
+        <div>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" value="Submit Now"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input
+                type="reset" value="Reset Now">
+        </div>
+        <!-- <input> element. The value attribute is used differently for different input types: For "button", "reset", and "submit" - it defines the text on the button. For "text", "password", and "hidden" - it defines the initial (default) value of the input field.</body> -->
+    </form>
+
+
+</body>
+
+</html>
